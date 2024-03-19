@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <script src="main.js" defer></script>
+    <title>PokeDex</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  clifford: '#da373d',
+                },
+                fontFamily: { 
+                  'inter': ['"Inter"']
+                }  
+              }
+            }
+          }
+
+    </script>
+
+</head>
+<body class="font-inter">
+    <header class="bg-cyan-900 text-white p-4 shadow-cyan-800 shadow-md ">
+        <div id="content-container" class="mx-4 flex justify-between">
+            <h1 class=" text-5xl font-black mx-4">PokeDex</h1>
+            <nav>
+                <ul class="flex p-4">
+                    <li class="px-5"><a href="#">Acessar API</a></li>
+                    <li class="px-5"><a href="#">Sei lá</a></li>
+                    <li class="px-5"><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            
+            <img src="" alt="Imagem do pokemon" id="sprite-pokemon">
+            <table class="table-auto">
+                <thead>
+                    <tr>
+                        <th>Stats</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>name</th>
+                        <td id="nome-pokemon"></td>
+                    </tr>
+                    <tr>
+                        <th>weight</th>
+                        <td id="peso-pokemon"></td>
+                    </tr>
+                    <tr>
+                        <th>base experience</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>abilities</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>sprites</th>
+                        <td></td>
+                    </tr>
+                    <tr>    
+                        <th>stats</th>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+                <label for="icidade">Digite o nome da cidade: </label><br>
+                <input type="text" id="icidade" name="cidade"><br>
+
+                <button class=" bg-cyan-500 px-6 py-3 rounded-lg  
+                                text-white font-bold
+                                hover:bg-cyan-600
+                                hover:-translate-y-1
+                                hover:shadow-md
+                                hover:shadow-black  
+                                active:translate-y-0
+                                active:shadow-none
+                                active:bg-cyan-400
+                                " 
+                                
+                                
+                                id="search-button">Buscar</button>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Site desenvolvido por: 
+            <a href="https://www.linkedin.com/in/joão-vitor-rezende-moura" target="_blank">João Vítor Rezende Moura</a>
+        </p>
+    </footer>
+
+</body>
+</html>
