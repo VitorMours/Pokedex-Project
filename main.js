@@ -6,7 +6,11 @@ let apiBase = "https://pokeapi.co/api/v2/pokemon";
 // Finished: app variables and classes
 let btn = document.getElementById("search-button");
 let nome = document.getElementById("nome-pokemon");
+let peso = document.getElementById("peso-pokemon");
+let experiencia = document.getElementById("experience-pokemon");
 let imagem = document.getElementById("sprite-pokemon");
+let stats = document.getElementById("stats-cell");
+let abilities = document.getElementById("abilities-cell");
 
 // Finished
 class Pokemon{
@@ -53,7 +57,7 @@ btn.addEventListener("click", () => {
 
 // Finished: Function created to fetch the API data 
 function fetchData(){
-  let pokemon = document.getElementById("icidade");
+  let pokemon = document.getElementById("isearch");
   data = callApi(pokemon.value);
 }
 
@@ -87,14 +91,31 @@ function showPokemon(data_dict){
   let pokemon = new Pokemon(data_dict);
 
   nome.innerHTML = pokemon["name"];
+  peso.innerHTML = pokemon["weight"];
+  experiencia.innerHTML = pokemon["base_experience"]
+
+  //pokemon["stats"].forEach((item, index, array) => {console.log(item)});
+  //pokemon["stats"].forEach((item, index, array) => {console.log(item.stat)});
+
+  imagem.src = pokemon["sprite"];
+  imagem.alt = pokemon["name"];
+
+  addingCompoudingValuesOnTable(abilities, pokemon["abilities"]);
+  addingCompoudingValuesOnTable(stats, pokemon["stats"]);
+}
+
+
+function addingCompoudingValuesOnTable(domElement, data_dict){
 
 
 
 
+}
 
 
 
 
+function autocompleteByName(){
 
 
 }

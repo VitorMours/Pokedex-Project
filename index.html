@@ -30,8 +30,8 @@
     </script>
 
 </head>
-<body class="font-inter">
-    <header class="bg-cyan-900 text-white p-4 shadow-cyan-800 shadow-md ">
+<body class="font-inter h-lvh">
+    <header class="bg-cyan-900 text-white p-4 shadow-cyan-800 shadow ">
         <div id="content-container" class="mx-4 flex justify-between">
             <h1 class=" text-5xl font-black mx-4">PokeDex</h1>
             <nav>
@@ -44,49 +44,57 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="flex mt-4">
             
-            <img src="" alt="Imagem do pokemon" id="sprite-pokemon">
-            <table class="table-auto">
-                <thead>
-                    <tr>
-                        <th>Stats</th>
-                        <th>Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>name</th>
-                        <td id="nome-pokemon"></td>
-                    </tr>
-                    <tr>
-                        <th>weight</th>
-                        <td id="peso-pokemon"></td>
-                    </tr>
-                    <tr>
-                        <th>base experience</th>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th>abilities</th>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th>sprites</th>
-                        <td></td>
-                    </tr>
-                    <tr>    
-                        <th>stats</th>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section>
-                <label for="icidade">Digite o nome da cidade: </label><br>
-                <input type="text" id="icidade" name="cidade"><br>
+            <div id="image-container" class="h-1/2 w-1/2 flex justify-end self-center">
+                <img src="" alt="" id="sprite-pokemon" class="w-1/2 flex justify-center justify-items-right max-h-500px min-h-500px">
+                
+            </div>
+            <div id="data-container" class="w-1/2 mt-4">
+                <table class=" table-fixed shadow-lg bg-white">
+                    <thead>
+                        <tr class="bg-cyan-500 text-white">
+                            <th class="border px-8 py-4 w-auto">Stats</th>
+                            <th class="border px-8 py-4 w-96">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="border px-8 py-4">name</th>
+                            <td id="nome-pokemon"  class="border px-8 py-4 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="border px-8 py-4">weight</th>
+                            <td id="peso-pokemon"  class="border px-8 py-4 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="border px-8 py-4">base experience</th>
+                            <td id="experience-pokemon" class="border px-8 py-4 text-center"></td>
+                        </tr>
+                        <tr>
+                            <th class="border px-8 py-4">abilities</th>
+                            <td id="abilities-cell" class="border px-8 py-4 text-center">
 
-                <button class=" bg-cyan-500 px-6 py-3 rounded-lg  
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="border px-8 py-4">stats</th>
+                            <td id="stats-cell" class="border px-8 py-4 text-center">
+
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <label for="isearch" >Digite o nome do pokemon que você quer buscar: </label><br>
+                <input type="text" id="isearch" name="search" placeholder="Pokemon..."
+                    class="border-2 border-cyan-600 rounded-md"
+                    autocomplete
+                ><br>
+
+                <button class=" bg-cyan-500 mt-5 px-6 py-3 rounded-lg  
                                 text-white font-bold
                                 hover:bg-cyan-600
                                 hover:-translate-y-1
@@ -99,13 +107,19 @@
                                 
                                 
                                 id="search-button">Buscar</button>
+            </div>
         </section>
+        
     </main>
 
 
-    <footer>
+    <footer class="fixed bottom-0 bg-cyan-900 font-bold w-full text-center h-12 align-middle">
         <p>Site desenvolvido por: 
-            <a href="https://www.linkedin.com/in/joão-vitor-rezende-moura" target="_blank">João Vítor Rezende Moura</a>
+            <a href="https://www.linkedin.com/in/joão-vitor-rezende-moura" target="_blank"
+                class="text-white"
+            
+            
+            >João Vítor Rezende Moura</a>
         </p>
     </footer>
 
