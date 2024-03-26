@@ -30,20 +30,20 @@
     </script>
 
 </head>
-<body class="font-inter h-lvh">
+<body class="font-inter">
     <header class="bg-cyan-900 text-white p-4 shadow-cyan-800 shadow ">
         <div id="content-container" class="mx-4 flex justify-between">
             <h1 class=" text-5xl font-black mx-4">PokeDex</h1>
             <nav>
                 <ul class="flex p-4">
-                    <li class="px-5"><a href="#">Acessar API</a></li>
-                    <li class="px-5"><a href="#">Sei lá</a></li>
-                    <li class="px-5"><a href="#">Sobre</a></li>
+                    <li class="px-5"><a href="https://pokeapi.co/"
+                                        class="hover:font-black"
+                                        >Acessar API</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main class="min-h-dvh">
         <section class="flex mt-4">
             
             <div id="image-container" class="h-1/2 w-1/2 flex justify-end self-center">
@@ -88,13 +88,13 @@
                         </tr>
                     </tbody>
                 </table>
-                <label for="isearch" >Digite o nome do pokemon que você quer buscar: </label><br>
+                <label for="isearch" >Digite o nome do pokemon que você quer buscar: </label>
                 <input type="text" id="isearch" name="search" placeholder="Pokemon..."
-                    class="border-2 border-cyan-600 rounded-md"
+                    class="border-2 border-cyan-600 rounded-md w-48 mt-1"
                     autocomplete
-                ><br>
+          ><br/>
 
-                <button class=" bg-cyan-500 mt-5 px-6 py-3 rounded-lg  
+                <button class=" bg-cyan-500 mt-1 mb-4 px-6 py-3 rounded-lg  
                                 text-white font-bold
                                 hover:bg-cyan-600
                                 hover:-translate-y-1
@@ -113,10 +113,10 @@
     </main>
 
 
-    <footer class="fixed bottom-0 bg-cyan-900 font-bold w-full text-center h-12 align-middle">
-        <p>Site desenvolvido por: 
+    <footer class=" left-0 bottom-0 bg-cyan-900 font-bold w-full text-center h-12 align-middle">
+        <p class="flex justify-center content-center items-center h-full">Site desenvolvido por: 
             <a href="https://www.linkedin.com/in/joão-vitor-rezende-moura" target="_blank"
-                class="text-white"
+                class="text-white hover:underline"
             
             
             >João Vítor Rezende Moura</a>
