@@ -72,7 +72,8 @@ btn.addEventListener("keypress", search(event, btn));
 // Finished: Function created to fetch the API data 
 function fetchData(){
   let pokemon = document.getElementById("isearch");
-  data = callApi(pokemon.value);
+  
+  data = callApi(pokemon.value.toLowerCase());
 }
 
 // FINISHED
