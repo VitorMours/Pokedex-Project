@@ -16,6 +16,7 @@
     <script>
         tailwind.config = {
             theme: {
+
               extend: {
                 colors: {
                   clifford: '#da373d',
@@ -23,6 +24,13 @@
                 fontFamily: { 
                   'inter': ['"Inter"']
                 }  
+              },
+              screens: {
+
+                'md': '960px',
+
+
+
               }
             }
           }
@@ -44,13 +52,13 @@
         </div>
     </header>
     <main class="min-h-dvh">
-        <section class="flex mt-4">
+        <section class="flex flex-wrap min-[800px]:flex-row max-[800px]:flex-col  max-[800px]:items-center mt-4">
             
-            <div id="image-container" class="h-1/2 w-1/2 flex justify-end self-center">
+            <div id="image-container" class="h-1/2 w-1/2 flex min-[800px]:justify-end max-[800px]:justify-center self-center">
                 <img src="" alt="" id="sprite-pokemon" class="w-1/2 flex justify-center justify-items-right max-h-500px min-h-500px">
                 
             </div>
-            <div id="data-container" class="w-1/2 mt-4">
+            <div id="data-container" class="w-1/2 mt-4 max-[800px]:justify-center ">
                 <table class=" table-fixed shadow-lg bg-white">
                     <thead>
                         <tr class="bg-cyan-500 text-white">
